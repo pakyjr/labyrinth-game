@@ -11,7 +11,7 @@ $(BUILD_DIR):
 	mkdir -p $(BUILD_DIR)
 
 server: $(BUILD_DIR)
-	$(CC) $(CFLAGS) -o $(BUILD_DIR)/server src/server.c $(LDFLAGS)
+	$(CC) $(CFLAGS) -o $(BUILD_DIR)/server src/server.c src/maze.c $(LDFLAGS)
 
 client: $(BUILD_DIR)
 	$(CC) $(CFLAGS) -o $(BUILD_DIR)/client src/client.c $(LDFLAGS)
